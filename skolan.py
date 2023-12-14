@@ -12,3 +12,12 @@ while True:
 4. Avaluta Spelet
         """
     )
+
+    if menyval == "1":
+        pass
+    if menyval == "2":
+        pass
+    if menyval == "3":
+        pass
+    if menyval == "4":
+        break
