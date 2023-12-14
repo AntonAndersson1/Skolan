@@ -1,5 +1,11 @@
 #Testar så github funkar
 
+def karaktär():
+    karaktärmeny = input("Vad heter du?")
+    print(f"Väldigt bra namn valt av din mamma och pappa!")
+
+
+
 while True:
     menyval = input(
         """
