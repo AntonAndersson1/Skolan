@@ -4,7 +4,16 @@ def karaktär():
     karaktärmeny = input("Vad heter du?")
     print(f"Väldigt bra namn valt av din mamma och pappa!")
 
+def Insällningar(svenska, engelska, swedish, english):
+    Inställningar = input("Vill du ha spelet på svenska eller engelska, Do you want the game in swedish or english")
+    if svenska == True or swedish == True:
+        print ("Spelet kommer vara på svenska")
+        if engelska == True or english == True:
+            print("The game will be on English")
 
+        
+        
+    
 
 while True:
     menyval = input(
