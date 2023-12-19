@@ -35,12 +35,13 @@ def Insällningar(svenska, engelska, swedish, english):
 def Spel():
     vald_dörr = int(input("Vilken dörr vill du gå igenom (1, 2 eller 3)? "))
 
-    vinnande_dörr = random.randint(1, 3)
+    farlig_dörr = random.randint(1, 3)
 
-    if vald_dörr == vinnande_dörr:
-        print("")
+    if vald_dörr == farlig_dörr:
+        print("du överlever och kommer till nästa par var dörrar.")
     else:
         print(f"{Dead}")
+        
         
     
 
