@@ -1,4 +1,5 @@
 #Testar så github funkar
+import random
 
 def karaktär():
     karaktärmeny = input("Vad heter du?")
@@ -11,7 +12,15 @@ def Insällningar(svenska, engelska, swedish, english):
         if engelska == True or english == True:
             print("The game will be on English")
 
-        
+def Spel():
+    vald_dörr = int(input("Vilken dörr vill du gå igenom (1, 2 eller 3)? "))
+
+    vinnande_dörr = random.randint(1, 3)
+
+    if vald_dörr == vinnande_dörr:
+        print("")
+    else:
+        print(f"")
         
     
 
