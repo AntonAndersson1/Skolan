@@ -38,10 +38,10 @@ while True:
     )
 
     if menyval == "1":
-        pass
+        Spel()
     if menyval == "2":
-        pass
+        karaktär()
     if menyval == "3":
-        pass
+        Insällningar()
     if menyval == "4":
         break
