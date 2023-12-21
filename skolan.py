@@ -23,22 +23,22 @@ Dead = ("""
 
 def karaktar():
     karaktarmeny = input("Vad heter du?")
-    print(f"Väldigt bra namn valt av din mamma och pappa!")
+    print(f"Valdigt bra namn valt av din mamma och pappa!")
 
 def Insallningar(svenska, engelska, swedish, english):
-    Installningar = input("Vill du ha spelet på svenska eller engelska, Do you want the game in swedish or english")
+    Installningar = input("Vill du ha spelet pa {svenska} eller {engelska}, Do you want the game in {swedish} or {english}")
     if svenska == True or swedish == True:
-        print ("Spelet kommer vara på svenska")
+        print ("Spelet kommer vara pa svenska")
         if engelska == True or english == True:
             print("The game will be on English")
 
 def Spel():
-    vald_dorr = int(input("Vilken dörr vill du gå igenom (1, 2 eller 3)? "))
+    vald_dorr = int(input("Vilken dorr vill du gå igenom (1, 2 eller 3)? "))
 
     farlig_dorr = random.randint(1, 3)
 
     if vald_dorr == farlig_dorr:
-        print("du överlever och kommer till nästa par var dörrar.")
+        print("du overlever och kommer till nasta rum.")
     else:
         print(f"{Dead}")
         
