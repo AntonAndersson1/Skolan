@@ -1,6 +1,8 @@
 #Testar så github funkar
 import random
 
+fortsatt = ("{menyval}")
+
 Dead = ("""
         ⠀⢀⣠⣤⣶⣶⣾⣿⣿⣷⣶⣶⣤⣄⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⣠⡾⠛⠉⠉⠀⠀⠀⠀⠀⠉⠉⠛⠻⠿⣿⣿⣶⣤⡀⠀⠀⠀⠀⠀
@@ -36,14 +38,17 @@ def Spel():
     vald_dorr = int(input("Vilken dorr vill du gå igenom (1, 2 eller 3)? "))
 
     farlig_dorr = random.randint(1, 3)
+    fram_dorr = range(1,3)
 
-    if vald_dorr == farlig_dorr:
+    if vald_dorr == farlig_dorr == True:
         print(f"{Dead}")
+    if vald_dorr == fram_dorr == True:
+        print(f"du lever")
     else:
         print("du overlever och kommer till nasta rum.")
         
-        
-    
+
+
 
 while True:
     menyval = input(
@@ -54,7 +59,7 @@ while True:
 
 3. Installningar
 
-4. Avaluta Spelet
+4. Avsluta Spelet
         """
     )
 
