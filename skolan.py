@@ -22,11 +22,12 @@ Dead = ("""
 
 
 
-
+#Funktion för karaktären ska kunna ha ett namn
 def karaktar():
     karaktarmeny = input("Vad heter du?")
     print(f"Valdigt bra namn valt av din mamma och pappa!")
 
+#Funktion för att inställningar ska kunna fungera
 def Insallningar(svenska, engelska, swedish, english):
     Installningar = input("Vill du ha spelet pa svenska eller engelska, Do you want the game in swedish or english")
     if svenska == True or swedish == True:
@@ -34,6 +35,7 @@ def Insallningar(svenska, engelska, swedish, english):
         if engelska == True or english == True:
             print(f"The game will be on English")
 
+#Funktion för att spelet ska start
 def Spel():
     vald_dorr = int(input("Vilken dorr vill du gå igenom (1, 2 eller 3)? "))
 
@@ -49,7 +51,7 @@ def Spel():
         
 
 
-
+#Startmeny vi använden if-sats för att kunna se vad spelar vill göra.
 while True:
     menyval = input(
         """
