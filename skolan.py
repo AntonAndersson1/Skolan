@@ -21,6 +21,11 @@ Dead = ("""
 ⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠿⠿⠿⣿⣿⣿⠿⠿⠟⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀""")
 
 
+def valj_dorr(antal_dorrar):
+    """Låter spelaren välja en dörr och avgör om det var den säkra dörren."""
+    farlig_dorr = random.randint(1, antal_dorrar)
+    vald_dorr = int(input(f"Vilken dörr vill du gå igenom (1-{antal_dorrar})? "))
+    return vald_dorr != farlig_dorr
 
 #Funktion för karaktären ska kunna ha ett namn
 def karaktar():
@@ -32,22 +37,35 @@ def Insallningar(svenska, engelska, swedish, english):
     Installningar = input("Vill du ha spelet pa svenska eller engelska, Do you want the game in swedish or english")
     if svenska == True or swedish == True:
         print(f"Spelet kommer vara pa svenska")
-        if engelska == True or english == True:
-            print(f"The game will be on English")
+    if engelska == True or english == True:
+        print(f"The game will be on English")
+    else: print("Someting went wrong.(Något gick fel.)")
 
 #Funktion för att spelet ska start
 def Spel():
-    vald_dorr = int(input("Vilken dorr vill du gå igenom (1, 2 eller 3)? "))
-
-    farlig_dorr = random.randint(1, 3)
-    fram_dorr = range(1,3)
-
-    if vald_dorr == farlig_dorr == True:
-        print(f"{Dead}")
-    if vald_dorr == fram_dorr == True:
-        print(f"du lever")
-    else:
-        print("du overlever och kommer till nasta rum.")
+    print("Start")
+    if not valj_dorr(3):
+        print("Dead")
+        return
+    
+    if not valj_dorr(3):
+        print("Dead")
+        return
+    
+    if not valj_dorr(2):
+        print("Dead")
+        return
+    
+    if not valj_dorr(2):
+        print("Dead")
+        return
+    
+    val = input("Vill du gömma dig (1) eller välja en dörr (2-5)? ")
+    if val == "1" or not valj_dorr(5):
+        print("Dead")
+        return
+    
+    print("EXIT, du överlevde!")
         
 
 
