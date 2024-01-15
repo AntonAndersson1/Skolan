@@ -45,24 +45,24 @@ def Insallningar(svenska, engelska, swedish, english):
 def Spel():
     print("Start")
     if not valj_dorr(3):
-        print("Dead")
+        print(f"{Dead}")
         return
     
     if not valj_dorr(3):
-        print("Dead")
+        print(f"{Dead}")
         return
     
-    if not valj_dorr(2):
-        print("Dead")
+    riktning = input("Vill du gå till höger eller vänster? (höger/vänster) ")
+    if riktning.lower() == "vänster":
+        print(f"Felaktigt val. {Dead}")
         return
-    
-    if not valj_dorr(2):
-        print("Dead")
+    elif riktning.lower() != "höger":
+        print(f"{Dead}.")
         return
     
     val = input("Vill du gömma dig (1) eller välja en dörr (2-5)? ")
     if val == "1" or not valj_dorr(5):
-        print("Dead")
+        print(f"{Dead}")
         return
     
     print("EXIT, du överlevde!")
