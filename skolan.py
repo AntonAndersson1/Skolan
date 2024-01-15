@@ -52,13 +52,23 @@ def Spel():
         print(f"{Dead}")
         return
     
+    
     riktning = input("Vill du gå till höger eller vänster? (höger/vänster) ")
     if riktning.lower() == "vänster":
-        print(f"Felaktigt val. {Dead}")
-        return
+        if not valj_dorr(2):
+            print("Dead")
+            return
+        else:
+            print(f"Det är en Deadend. Spelet är över {Dead}.")
+            return
     elif riktning.lower() != "höger":
-        print(f"{Dead}.")
+        print(f"Felaktigt val. Spelet är över {Dead}.")
         return
+    
+    if not valj_dorr(2):
+        print(f"{Dead}")
+        return
+    
     
     val = input("Vill du gömma dig (1) eller välja en dörr (2-5)? ")
     if val == "1" or not valj_dorr(5):
