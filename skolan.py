@@ -45,7 +45,7 @@ def Insallningar(svenska, engelska, swedish, english):
 def Spel():
     print("Start")
     if not valj_dorr(3):
-        print(f"{Dead}")
+        print(f"{karaktar}{Dead}")
         return
     
     if not valj_dorr(3):
@@ -56,7 +56,7 @@ def Spel():
     riktning = input("Vill du gå till höger eller vänster? (höger/vänster) ")
     if riktning.lower() == "vänster":
         if not valj_dorr(2):
-            print("Dead")
+            print(f"{Dead}")
             return
         else:
             print(f"Det är en Deadend. Spelet är över {Dead}.")
