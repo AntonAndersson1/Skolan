@@ -20,7 +20,7 @@ Dead = ("""
 ⠀⠀⠀⠀⠈⠙⠿⣿⣿⣷⣦⣤⣄⣀⣀⣀⣀⣀⣤⣴⣾⠿⠋⠁⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠿⠿⠿⣿⣿⣿⠿⠿⠟⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀""")
 
-
+#Funktion för dörrarna som gör så att spelet har en mening
 def valj_dorr(antal_dorrar):
     """Låter spelaren välja en dörr och avgör om det var den säkra dörren."""
     farlig_dorr = random.randint(1, antal_dorrar)
@@ -37,7 +37,7 @@ def Insallningar(svenska, engelska, swedish, english):
     Installningar = input("Vill du ha spelet pa svenska eller engelska, Do you want the game in swedish or english")
     if svenska == True or swedish == True:
         print(f"Spelet kommer vara pa svenska")
-    if engelska == True or english == True:
+    elif engelska == True or english == True:
         print(f"The game will be on English")
     else: print("Someting went wrong.(Något gick fel.)")
 
