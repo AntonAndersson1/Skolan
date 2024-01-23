@@ -1,3 +1,2 @@
 # Skolan
-Eget spel
-# I detta spel ska man går man in i en skola och sen låst dörren som man går igenom och en man kommer som försöker döda dig och du ska gå igenom olika dörrar för att leta efter en väg ut eller någon stans att gömma sig
+Spelet handlar om att du går in i en övergiven skola för att ta skydd från regnet men dörren stängs bakom dig av vinden och den låser sig i baklås. Så nu är du fast i en skola och hör att det är någon som skriker "vem är i min skola" Då väljer du att springa du kommer få valmöjligheter mellan olika dörrar du kan gå igenom. Ditt mål är att försöka rymma skolan och komma ut innan mannen hinner ikapp dig. Det finns olika avslut i spelet och i visa rum måste du gömma dig för att överleva.
