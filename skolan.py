@@ -20,7 +20,7 @@ Dead = ("""
 ⠀⠀⠀⠀⠈⠙⠿⣿⣿⣷⣦⣤⣄⣀⣀⣀⣀⣀⣤⣴⣾⠿⠋⠁⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠿⠿⠿⣿⣿⣿⠿⠿⠟⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀""")
 
-
+#Funktion för dörrarna som gör så att spelet har en mening
 def valj_dorr(antal_dorrar):
     """Låter spelaren välja en dörr och avgör om det var den säkra dörren."""
     farlig_dorr = random.randint(1, antal_dorrar)
