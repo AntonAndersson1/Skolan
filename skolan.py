@@ -31,21 +31,19 @@ def valj_dorr(antal_dorrar):
 def karaktar():
     karaktarmeny = input("Vad heter du?")
     print(f"Valdigt bra namn valt av din mamma och pappa!")
+    namn = karaktar
 
-#Funktion för att inställningar ska kunna fungera
-def Insallningar(svenska, engelska, swedish, english):
-    Installningar = input("Vill du ha spelet pa svenska eller engelska, Do you want the game in swedish or english")
-    if svenska == True or swedish == True:
-        print(f"Spelet kommer vara pa svenska")
-    if engelska == True or english == True:
-        print(f"The game will be on English")
-    else: print("Someting went wrong.(Något gick fel.)")
+#Funktion för att spelguiden ska fungera så att du får upp en guide hur spelet funkar.
+def Spelguide():
+    Spelguide = input("Detta spel går ut på att du ska överleva en mördare i en skola. Du kommer få olika valmöjligheter om vad du vill göra för att välja valmöjlighet så skriver du den siffran på det valet du vill välja. Ibland kommer du få ett val som säger vill du gömma dig eller gå vidare då skriver du 1 ifall du vill gömma dig och 3 ifall du vill fortsätta framåt. Ditt mål med spelet är att du ska överleva och lyckas rymma skolan med någon av de olika exitsen som finns. När du har läst klart allt och är redo att spela kan du skriva meny för att komma till menyn.   ")
+
+    
 
 #Funktion för att spelet ska start
 def Spel():
     print("Start")
-    if not valj_dorr(3):
-        print(f"{karaktar}{Dead}")
+    if not valj_dorr(3): 
+        print(f"{Dead}")
         return
     
     if not valj_dorr(3):
@@ -59,7 +57,7 @@ def Spel():
             print(f"{Dead}")
             return
         else:
-            print(f"Det är en Deadend. Spelet är över {Dead}.")
+            print(f"Det är en Deadend. Spelet är över{Dead}.")
             return
     elif riktning.lower() != "höger":
         print(f"Felaktigt val. Spelet är över {Dead}.")
@@ -87,7 +85,7 @@ while True:
 
 2. Karaktar Meny
 
-3. Installningar
+3. Spelguide
 
 4. Avsluta Spelet
         """
@@ -98,6 +96,6 @@ while True:
     if menyval == "2":
         karaktar()
     if menyval == "3":
-        Insallningar()
+        Spelguide()
     if menyval == "4":
         break
