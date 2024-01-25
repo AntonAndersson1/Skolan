@@ -75,7 +75,11 @@ def Spelguide():
 
 #Funktion för att spelet ska start
 def Spel():
-    print("Start")
+    print("Du står framför den gamla, slitna skolbyggnaden, dess väggar är täckta av mossa och fönstren ser ut som tomma ögonhålor. Det är en kylig och dimmig morgon, och du kan knappt urskilja toppen av skolan genom dimman. Med ett djupt andetag tar du tag i det kalla dörrhandtaget och skjuter upp den tunga träporten.")
+    print("Dörren faller igen bakom dig med ett ödesmättat slammer. Du rycker i handtaget, men det är förgäves dörren är låst. Ett kallt rysningar löper längs din ryggrad när du inser att du är fast.")
+    print("Du vandrar genom de dunkla korridorerna, där varje steg ekar genom tystnaden. Gamla affischer fladdrar i draget och skuggorna verkar röra sig i ögonvrån. Framför dig finns flera dörrar, var och en ser lika inbjudande ut som den är skrämmande")
+    print("Du stannar upp framför en rad av dörrar. Varje dörr har sin egen mystiska karaktär - en ser robust och tung ut, en annan är mjukt insvept i skuggor, och en tredje är halvöppen, med ett svagt ljus som sipprar ut. Vilken dörr väljer du?")
+
     if not valj_dorr(3): 
         print(f"{Dead}")
         return
