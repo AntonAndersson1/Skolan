@@ -125,12 +125,16 @@ def Spel():
         print(f"{Dead}")
         return
     
+    print("Du har gått igenom dörren och befinner dig nu i skolans gamla bibliotek. Det är ett rum fyllt med tidens viskningar, bokhyllor sträcker sig från golv till tak, och de många böckerna bär på berättelser från en svunnen tid. Rummet badar i ett dammigt halvmörker, och den enda ljudet är dina egna steg på det knarrande trägolvet. En bok har fallit ned på golvet, dess sidor fladdrar svagt i draget.")
+    print("Medan du vandrar mellan hyllorna, upptäcker du att biblioteket leder vidare till tre nya dörrar. Varje dörr ser annorlunda ut, den första är robust och ser ut att vara gjord av ek, den andra är delvis glasad och du kan skymta en dunkelt upplyst korridor bakom, och den tredje är enkel och oansenlig, nästan lätt att missa. Du stannar upp och betraktar dem. Vilken dörr ska du välja att gå igenom? Kanske håller svaren du söker på att dölja sig bakom en av dem.")
     if not valj_dorr(3):
         print(f"{Dead}")
         return
     
-    
+    print("Efter att ha utforskat bibliotekets dammiga gångar och hemligheter, finner du dig själv tillbaka vid utgången. Du står nu i en smal korridor, som sträcker sig bort från bibliotekets trygga tystnad. Här känns luften tyngre, fylld av en obehaglig förväntan. Längre fram delar korridoren sig i två, och du måste välja din fortsatta väg.")
+    print("Till höger ser korridoren ut att leda till ett område med blekt ljus som sipprar in genom sprickor i väggarna, och du kan höra ett svagt, nästan hypnotiskt, brus. Till vänster breder mörkret ut sig, och korridoren verkar slingra sig iväg mot något okänt, med en aura av tystnad och hemlighetsfullhet. Din hand vilar på den kalla väggen för stöd, och du funderar över vilken riktning som är säkrast, eller kanske mest riskfylld. Ska du gå till höger och utforska ljuset, eller till vänster där mörkret kallar?")
     riktning = input("Vill du gå till höger eller vänster? (höger/vänster) ")
+    print("Du tar ett djupt andetag och styr dina steg åt vänster, in i korridorens mörkare del. Här är luften kallare och varje steg känns tyngre. Mörkret omsluter dig snart helt och du måste famla dig fram längs väggarna för att inte snubbla. Den tysta korridoren tycks sträcka sig oändligt, men till slut öppnar den sig till en större sal. I mörkret kan du urskilja konturerna av något stort i rummets mitt, något som verkar vänta på att upptäckas. En känsla av något oupptäckt, kanske farligt, hänger i luften.")
     if riktning.lower() == "vänster":
         if not valj_dorr(2):
             print(f"{Dead}")
@@ -141,12 +145,12 @@ def Spel():
     elif riktning.lower() != "höger":
         print(f"Felaktigt val. Spelet är över {Dead}.")
         return
-    
+    print("När du svänger till höger, möts du av en korridor som badar i ett svagt, fläckvis ljus. Ljuset verkar komma från små glipor i taket, och du kan skönja dammpartiklar som dansar i strimmorna. Korridoren är smalare här, och väggarna känns nästan som om de närmar sig. Dina steg ekar tyst när du fortsätter framåt. Efter en stund leder korridoren till en liten dörr, halvt dold av en hängande ljuskrona. Bakom dörren hör du svaga, nästan otydliga, ljud – som om någon eller något rör sig därinne.")
     if not valj_dorr(2):
         print(f"{Dead}")
         return
     
-    
+    print("Du befinner dig nu framför fyra dörrar, var och en unik i sitt slag och omgivna av en myriad av föremål som strösslar korridoren. Dessa ting verkar ha sina egna berättelser, övergivna och glömda i tiden. Framför dig öppnar sig möjligheterna: Ska du söka skydd bland dessa gömda reliker och gömma dig från det okända, eller har du modet att stiga igenom en av dessa dörrar? Valet ligger i dina händer, en chans att fortsätta utforska de djupare hemligheterna som väntar, eller en stund av försiktig eftertanke i skuggorna av det förflutna.")
     val = input("Vill du gömma dig (1) eller välja en dörr (2-5)? ")
     if val == "1" or not valj_dorr(5):
         print(f"{Dead}")
